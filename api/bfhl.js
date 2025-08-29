@@ -41,17 +41,18 @@ export default function handler(req, res) {
         .join("");
   
       return res.status(200).json({
-        success: true,
-        user_id: `${student_name}_${birthdate}`,
-        email_id,
-        roll_no,
-        odds,
-        evens,
-        letters,
-        specials,
-        total: total.toString(),
-        funky_string: reversedCaps,
-      });
+  is_success: true,
+  user_id: `${student_name}_${birthdate}`,
+  email: email_id,          
+  roll_number: roll_no,       
+  odd_numbers: odds,         
+  even_numbers: evens,        
+  alphabets: letters,        
+  special_characters: specials, 
+  sum: total.toString(),     
+  concat_string: reversedCaps 
+});
+
     } catch (error) {
       return res.status(500).json({ success: false, message: error.message });
     }
