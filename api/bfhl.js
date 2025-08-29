@@ -18,10 +18,10 @@ export default function handler(req, res) {
 
     const { data } = req.body;
 
-    const student_name = "madhen_doe";   
-    const birthdate = "20092004";        
-    const email_id = "madhen@xyz.com";   
-    const roll_no = "22BCE0123";         
+    const student_name = "madhenkumar_ravichandran";   
+    const birthdate = "20072004";        
+    const email_id = "madhenkumar.2022@vitstudent.ac.in";   
+    const roll_no = "22BCE0559";         
 
     const odds = [];
     const evens = [];
